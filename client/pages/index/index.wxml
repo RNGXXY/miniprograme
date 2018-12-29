@@ -1,0 +1,33 @@
+<!--client/pages/index/index.wxml-->
+<!-- 引入模板 -->
+<import src='../../templates/index-tab-bar/index.wxml' />
+
+<view  class='page index'>
+<!-- banner -->
+  <view class='banner-container'>
+    <swiper
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+    >
+      <block wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.campaign_uuid}}">
+        <swiper-item >
+          <image src="{{item.img}}" class="slide-image swiper-img" />
+        </swiper-item>
+      </block>
+    </swiper>
+     <!-- search-btn -->
+    <view bindtap='toSearch' class='search-btn'>
+      <image src='../../images/icons/search.png'></image>
+    </view>
+  </view>
+  <!-- tab-bar -->
+  <template is='index-tab-bar' data="{{ tabs }}"></template>
+
+  <!-- job-list -->
+  <view style='margin-top: 20rpx;'>
+    <job-list indexType="true"></job-list>
+  </view>
+
+</view>

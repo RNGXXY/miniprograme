@@ -1,0 +1,53 @@
+<!--components/select/select.wxml-->
+
+<view class='select'>
+  <view class='left'>
+    <view class='top'>
+    <select-item 
+      activeType="{{activeType}}"
+      text="{{types.i}}" 
+      type="i"
+      bind:changeActive = "changeActive"
+      selects = "{{selects}}"
+      bind:changeText = "changeText"
+    ></select-item>
+      
+    <select-item 
+      activeType="{{activeType}}" type="c"
+      text="{{types.c}}" 
+      bind:changeActive = "changeActive"
+      selects = "{{selects}}"
+      bind:changeText = "changeText"
+    ></select-item>
+
+    <select-item 
+      activeType="{{activeType}}" type="s"
+      text="{{types.s}}" 
+      bind:changeActive = "changeActive"
+      selects = "{{selects}}"
+      bind:changeText = "changeText"
+    ></select-item>
+
+    </view>
+    <view class='bottom' animation="{{animation}}">
+      <select-item 
+      activeType="{{activeType}}" type="d"
+      text="{{types.d}}" 
+      bind:changeActive = "changeActive"
+      selects = "{{selects}}"
+      bind:changeText = "changeText"
+    ></select-item>
+
+    <select-item 
+      activeType="{{activeType}}" type="m"
+      text="{{types.m}}" 
+      bind:changeActive = "changeActive"
+      selects = "{{selects}}"
+      bind:changeText = "changeText"
+    ></select-item>
+    </view>
+  </view>
+  <view bindtap='toggle' class='nav'>……</view>
+  
+  
+</view>

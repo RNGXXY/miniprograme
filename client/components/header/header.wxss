@@ -1,0 +1,16 @@
+/* components/header/header.wxss */
+
+.custom-header {
+  box-sizing: border-box;
+  height: 130rpx;
+  background: #6698ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40rpx 30rpx 0rpx;
+  color: #fff;
+}
+
+.custom-header .left, .custom-header .right {
+  width: 40rpx;
+}

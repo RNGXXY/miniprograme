@@ -1,0 +1,24 @@
+/* components/select/select-item/select-item.wxss */
+
+.select-item {
+  flex-grow: 1;
+  height: 50px;
+  background: #fff;
+  
+  color: #666;
+  font-size: 30rpx;
+  border-top: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+
+.select-item.active {
+  color: #02a0e9;
+}
+
+.select-item picker {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

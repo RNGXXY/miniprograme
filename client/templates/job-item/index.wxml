@@ -1,0 +1,29 @@
+
+
+<template name="job-item">
+  <view class='job-item'>
+    <navigator>
+      <image src = "{{logo_url}}"></image>
+      <view class='info'>
+        <text class='job-name'>{{name}}</text>
+        <rich-text wx:if="{{!indexType}}" class='city-day custom-font'>{{city}}/每周{{dayperweek}}天</rich-text>
+        <text class='company-name'>{{cname}}</text>
+        <view  wx:if="{{indexType}}" class='city-time'>
+          <view class="city-time-item">
+            <image src="../../images/icons/address.png"></image>
+            <text>{{city}}</text>
+          </view>
+          <view  class="city-time-item">
+            <image src="../../images/icons/time.png"></image>
+            <text>{{month_num}}个月</text>
+          </view>
+        </view>
+      </view>
+      <view class='publish'>
+        <!-- <text class='time custom-font'>{{refresh}}</text> -->
+        <text class='salary custom-font'>￥{{minsalary}}-{{maxsalary}}/天</text>
+      </view>
+    </navigator>
+  </view>
+</template>
+

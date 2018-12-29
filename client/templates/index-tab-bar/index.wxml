@@ -1,0 +1,15 @@
+
+<template name='index-tab-bar-item'>
+  <navigator url='' class='tab-bar-item'>
+    <image src='{{imgSrc}}' ></image>
+    <text>{{title}}</text>
+  </navigator>
+</template>
+
+<template name = "index-tab-bar">
+  <view class='tab-bar'>
+    <block wx:for = "{{tabs}}" wx:key = "item.id">
+      <template  is = "index-tab-bar-item" data = "{{...item}}"/>
+    </block>
+  </view>
+</template>

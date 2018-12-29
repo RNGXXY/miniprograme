@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "custom-header": "../../components/header/header",
+    "custom-select": "../../components/select/select",
+    "i-panel": "../../iview/panel/index",
+    "i-button": "../../iview/button/index",
+    "i-input": "../../iview/input/index"
+  }
+}

@@ -1,0 +1,6 @@
+/* components/job-list/job-list.wxss */
+
+.job-list {
+  background: #fff;
+  padding: 14rpx 35rpx 0rpx;
+}

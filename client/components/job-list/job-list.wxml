@@ -1,0 +1,10 @@
+<!--components/job-list/job-list.wxml-->
+<!-- <import src="../../wxParse/wxParse.wxml" /> -->
+<import src = "../../templates/job-item/index.wxml" />
+
+<view class='job-list'>
+  <!-- <view class='custom-font'><template is="wxParse" data="{{wxParseData:a.nodes}}"/></view> -->
+  <block wx:for = "{{jobs}}" wx:key="{{item.uuid}}">
+    <template is = "job-item" data = "{{...item, indexType}}" />
+  </block>
+</view>

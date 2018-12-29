@@ -1,0 +1,14 @@
+<!--components/select/select-item/select-item.wxml-->
+<view  class='select-item {{activeType === type ? "active" : ""}}'>
+  <picker
+      bindtap='select'
+      mode="multiSelector"
+      bindchange="bindMultiPickerChange"
+      bindcolumnchange="bindMultiPickerColumnChange"
+      bindcancel="pickercancel"
+      value="{{pickerIndex}}"
+      range="{{pickerArray}}"
+    >
+  <text>{{text}}</text>
+  </picker>
+</view>
